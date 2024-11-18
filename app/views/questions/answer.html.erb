@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Hello there</h1>
+
+  <div class="p-3 mb-2 question">
+  <%= params[:ask] %>
+  <p class="author">- You</p>
+  </div>
+
+  <div class="p-3 mb-2 answer">
+    <%= @answer %>
+    <p class="author">- Your coach</p>
+  </div>
+
+  <div class="message link my-4">
+  <%= link_to "Ask a new question", ask_path %>
+  </div>
+</div>
